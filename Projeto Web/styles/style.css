@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,100&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-segundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+} /*remover todas as margens de todas as tags*/
+
+body{ 
+    height: 100vh; definindo altura da tela para que o conteúdo ocupe 100% da página - viewport 
+    box-sizing: border-box; /*chinelo para o filho obdecer o pai*/
+    background: #618264;
+    color: #F6F6F6;
+    text-align: center;
+    
+} 
+
+
+.cabecalho{
+    text-align: center;
+    padding: 2% 0% 0% 10%; superior, direito, inferior, esquerdo
+}   
+
+.cabecalho_menu{
+    display:flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+.apresentacao{
+    margin: 3%; adiciona uma margem para centralizar os quadrados na tela
+    padding: 0% 15%;
+    display: flex; /*coloca os quadrados lado a lado*/
+    flex-direction: column; /*para deixar os itens em forma de coluna*/
+    align-items: center; /*para alinhar os itens ao centro*/
+    /* padding: 0% 0% 15% 0%; superior, direito, inferior, esquerdo */
+    gap: 40px;
+}
+
+.perfil{ 
+  forced-color-adjust: none;
+  width: 500px;
+  height: px;
+  /* border-radius: 100%; */
+  /* border: 0.5px solid black; */
+  align-items: center   
+}
+
+.apresentacao_conteudo {
+
+
+}
+
+.titulo_sobrenome {
+  color: #D0E7D2;
+  font-size: 1;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  /* background:#f0ebeb */
+}
+
+.texto{   
+  margin: 15px; /*espaço entre o titulo e o texto*/
+  width: 1300px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+
+
+.alinhamento{
+    display: flex; /*coloca os quadrados lado a lado  --> https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    justify-content: center;
+    flex-direction: row  ;
+    align-items: center;  
+    gap: 3px; /*adiciona espaços iguais entre cada quadrado*/
+    margin-top: 30px;
+
+}
+
+.formatacao_logos {
+  width: 50px;
+  height: 50px;
+  
+}
+
+.botao_logo{
+    /*background-color: grey;*/
+    border: 1px solid /*modelo da borda, pode ser tracejado --> border solide w3s */ white;
+    width: 100px;
+    color: #f6f6f6;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    padding: 5px ;
+    text-decoration: none;
+ 
+}
+
+
+div{
+    display:block
+} 
+
+.foto_portifolio{}
+
+.sub_titulo{
+    margin: 3%; adiciona uma margem para centralizar os quadrados na tela
+    padding: 10%;
+    display: flex; /*coloca os quadrados lado a lado*/
+    flex-direction: column; /*para deixar os itens em forma de coluna*/
+    align-items: center; /*para alinhar os itens ao centro*/
+    /* padding: 0% 0% 15% 0%; superior, direito, inferior, esquerdo */
+    /* gap: 40px; */
+  
+}
+
+
+
+
+
+
+
+
+a{text-align: center;}
+
+
+
+
+
+
+.foto_portifolio{
+    display: flex;
+    flex-direction: row;
+}
+
+#foto_perfil {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.rodape{
+    margin:0px; 
+    padding: 30% 0% 0% 0%; superior, direito, inferior, esquerdo;
+    color:black;
+    /* background-color: white; */
+    width: 100%;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+
+
+}
+
+table,
+      th,
+      td {
+        border: 1px solid #3A4D39;
+      }
+
+      th,
+      td {
+        padding: 5px;
+      }
+
+      table {
+        width: 600px;
+      }
+      #subtotal {
+        text-align: right;
+      }
+      #amarela {
+        background-color: #3A4D39;
+      }
+      #lightpink {
+        background-color: lightpink;
+      }
+      #domestica {
+        background-color: #739072;
+        text-align: center;
+      }
+      #externa {
+        background-color: powderblue;
+      }
+      #valor {
+        background-color: yellow;
+      }
+
+
+
+.body_body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+ /* box-sizing: border-box; chinelo para o filho obdecer o pai*/
+  background: #618264;
+  color: #F6F6F6;
+}
+
+.login_texto{
+  color: black;
+}
+
+h2{
+
+  color: #000000;
+
+}
+
+
+
+.login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+
+  
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.botao_login {
+  background-color: #0ffa55;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botao_esqueceu_senha{
+
+  background-color: #fa0f0f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+
+}
+
+button:hover {
+  background-color: #45a049;
+}

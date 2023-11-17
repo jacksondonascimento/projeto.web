@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho"> 
+        <nav class="cabecalho_menu">
+        <a class="cabecalho_menu_link" href="index.html">home</a>
+        <a class="cabecalho_menu_link" href="about.html" target="_blank">about me </a>
+        <a class="cabecalho_menu_link" href="login.html">login</a>
+        </nav>
+   </header>
+
+    
+<section class="body_body">
+<div class="login-container">
+    <h2 class="login_texto">login</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="e-mail" required>
+        <br>
+        <input type="password" id="password" placeholder="senha" required>
+        <br>
+        <button class="botao_login" type="botao_login" onclick="validateLogin()">login</button>
+        <button class="botao_esqueceu_senha" type="button" onclick="validateLogin()">forget password</button>
+    </form>
+</div>
+
+
+
+<script>
+    function validateLogin() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Validar se o e-mail e a senha são válidos (exemplo simples)
+        if (email === 'jack@jack.com' && password === '123') {
+            alert('Login bem-sucedido!');
+            // Aqui você pode redirecionar para outra página, se necessário.
+        } else {
+            alert('poxa terráqueo seu e-mail ou senha inválidos. tenta de.');
+        }
+    }
+</script>
+
+</section>
+</body>
+</html>

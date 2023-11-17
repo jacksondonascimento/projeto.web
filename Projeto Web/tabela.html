@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Preços</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 5px;
+      }
+
+      table {
+        width: 600px;
+      }
+      #subtotal {
+        text-align: right;
+      }
+      #amarela {
+        background-color: yellow;
+      }
+      #lightpink {
+        background-color: lightpink;
+      }
+      #domestica {
+        background-color: powderblue;
+      }
+      #externa {
+        background-color: powderblue;
+      }
+      #valor {
+        background-color: yellow;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <table>
+      <tr id="amarela">
+        <th colspan="3">Tabela de Contas e Saldos
+
+          
+        </th>
+      </tr>
+      <tr id="lightpink">
+        <td>Tipo de Despesa</td>
+        <td>Descrição</td>
+        <td>Valor</td>
+      </tr>
+      <tr>
+        <td rowspan="5" id="domestica">Doméstica</td>
+        <td>Compras do Mês</td>
+        <td>$280,00</td>
+      </tr>
+      <tr>
+        <td>Aluguel</td>
+        <td>$450</td>
+      </tr>
+      <tr>
+        <td>Luz</td>
+        <td>$120</td>
+      </tr>
+      <tr>
+        <td>Água</td>
+        <td>$111,00</td>
+      </tr>
+      <tr>
+        <td>telefone</td>
+        <td>$90,00</td>
+      </tr>
+      <tr>
+        <td rowspan="2" id="externa">Externa</td>
+        <td>Gasolina</td>
+        <td>$450,00</td>
+      </tr>
+      <tr>
+        <td>Almoço</td>
+        <td>$200</td>
+      </tr>
+      <tr id="subtotal">
+        <td colspan="2">Subtotal</td>
+        <td id="valor">$1.701,00</td>
+      </tr>
+    </table>
+  </body>
+</html>
